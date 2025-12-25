@@ -1,0 +1,160 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text("hello", style: TextStyle(color: Colors.white)),
+          backgroundColor: const Color.fromARGB(255, 5, 31, 52),
+          leading: Icon(Icons.menu, color: Colors.white),
+          actions: [Icon(Icons.search, color: Colors.white)],
+        ),
+        body: Padding(
+          padding: EdgeInsetsGeometry.all(10),
+          child: Column(
+             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    height: 160,
+                    width: 175,
+                    color: const Color.fromARGB(255, 7, 8, 80),
+                    
+                  ),
+                  SizedBox(
+                    height: 160,
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 70,
+                          width: 175,
+                          color: Colors.amber,
+                     
+                        ),
+                        Container(
+                          height: 70,
+                          width: 175,
+                        color:const Color.fromARGB(255, 238, 73, 32),
+                      
+                        )
+                      ],
+                    ),
+                  )
+          
+                ],
+              ),
+          
+              Container(
+                
+                height: 60,
+                width: double.infinity,
+                 color: const Color.fromARGB(255, 7, 8, 80),
+                
+              ),
+              Container(
+                
+                height: 60,
+                width: double.infinity,
+                 color: const Color.fromARGB(255, 7, 8, 80),
+              ),
+          
+              SizedBox(
+                height: 170,
+                width: double.infinity,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 170,
+                          width: 175,
+                         color: const Color.fromARGB(255, 21, 25, 235),
+                        ),
+                       
+                      ],
+                    ),
+                    Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Container(
+                          height: 50,
+                          width: 175,
+                            color: const Color.fromARGB(255, 21, 157, 235),
+                        ),
+                         Container(
+                          height: 50,
+                         width: 175,
+                          color: const Color.fromARGB(255, 21, 157, 235),
+                        ),
+                         Container(
+                          height: 50,
+                          width: 175,
+                       color: const Color.fromARGB(255, 21, 157, 235),
+                        )
+                      ],
+                
+                    )
+                  ],
+                ),
+                
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: 70,
+                    height: 70,
+                   
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(120),
+                       color: const Color.fromARGB(255, 3, 71, 1),
+                    ),
+                  ),
+                   Container(
+                    width: 70,
+                    height: 70,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(120),
+                       color: const Color.fromARGB(255, 164, 175, 5),
+                    ),
+                  ),
+                   Container(
+                    width: 70,
+                    height: 70,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(120),
+                       color: const Color.fromARGB(255, 126, 9, 9)
+                    ),
+                  ),
+                   Container(
+                    width: 70,
+                    height: 70,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(120),
+                       color: const Color.fromARGB(255, 107, 7, 82)
+                    ),
+                  )
+                ],
+              )
+             
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
